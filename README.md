@@ -24,7 +24,7 @@ Example of image treatment "Semaforo_verd_1".
 
 Original Image with the bounding box.
 
-![verd1](images/Semaforo_verd_1.png)
+![verd1](images/Semaforo_verd_1.jpg)
 
 Image that will be treated by the algorithm, after applying the mask.
 
@@ -42,8 +42,8 @@ The algorithm has an accuracy of 89%, failing only in the image "Semaforo_verm_5
 The histograms could have been made in opencv as per hist.py.
 Histogram of the original image in opencv.
 
-![histcv](images/hist_cv.png)
-![histcv_mask](images/hist_cv_mask.png)
+![histcv](images/hist_cv.jpg)
+![histcv_mask](images/hist_cv_mask.jpg)
 
 
 Another approach.
@@ -51,9 +51,9 @@ Another approach.
 As it is a fact acquired from the problem, the fact that the colors do not change their position on the traffic light, that is, the red light only lights up in the upper position, the yellow light in the central position and the green one in the lower position, we can analyze the traffic light in gray tone, just checking which light is on, through the intended tone.
 This approach to the first image is in the main2.py file.
 
-![vermelho](images/vermelho.png)
-![amarelo](images/amarelo.png)
-![verde](images/verde.png)
+![vermelho](images/vermelho.jpg)
+![amarelo](images/amarelo.jpg)
+![verde](images/verde.jpg)
 
 Conclusion
 
