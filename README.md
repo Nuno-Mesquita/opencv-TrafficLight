@@ -19,3 +19,42 @@ Next, the analysis is carried out using decision structures, this algorithm dete
 The colors activate according to the following values ​​in table I.
 
 ![TableI](images/tableI.png)
+
+Example of image treatment "Semaforo_verd_1".
+
+Original Image with the bounding box.
+
+![verd1](images/Semaforo_verd_1.png)
+
+Image that will be treated by the algorithm, after applying the mask.
+
+![sem1](images/sem_1.png)
+
+Histogram of 32 BINs of the three channels.
+
+![hist1](images/hist_1.png)
+
+
+Model evaluation.
+
+The algorithm has an accuracy of 89%, failing only in the image "Semaforo_verm_5", in the middle traffic light, because the yellow color has a high percentage of red and cannot carry out a correct analysis, and in the same image in the smallest traffic light, because the color green is too dar
+
+The histograms could have been made in opencv as per hist.py.
+Histogram of the original image in opencv.
+
+![histcv](images/hist_cv.png)
+![histcv_mask](images/hist_cv_mask.png)
+
+
+Another approach.
+
+As it is a fact acquired from the problem, the fact that the colors do not change their position on the traffic light, that is, the red light only lights up in the upper position, the yellow light in the central position and the green one in the lower position, we can analyze the traffic light in gray tone, just checking which light is on, through the intended tone.
+This approach to the first image is in the main2.py file.
+
+![vermelho](images/vermelho.png)
+![amarelo](images/amarelo.png)
+![verde](images/verde.png)
+
+Conclusion
+
+In this mini project I deepened my knowledge in opencv and in image processing, mainly in the analysis of images through their histograms, how to extract this data and use them for processing and analysis.
